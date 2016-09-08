@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>压大小</title>
+	<style type="text/css">
+	body{
+		background-image: url("iamges/body_backgound/wallpaper.jpg");
+	}
+	.table1{
+		background-image: url("iamges/body_backgound/di_2.JPG");
+	}
+	.table2{
+		background-color: #245;
+	}
+	</style>
+	<script type="text/javascript" src="js/daoxiao.js"></script>
+</head>
+<body>
+	<table class="table1" border="1" width="1000" height="500" align="center" >
+		<tr >
+			<td width="100" height="500"><b><big>游戏规则</big></b><br />
+				点击游戏开始后，游戏初始化，<br>输入你要压的金额，<br>然后点击压大（压小）按钮。
+			</td>
+			<td>
+				<table class="table2" border="15" width="500" height="450" align="center">
+					<tr>
+						<td width="550" height="30" align="center" colspan="2">
+							<button onclick="opend()">游戏开始</button>
+						</td>
+					</tr>
+
+					<tr>
+						<td width="225" height="195">
+							<img id="img1" src="" align="center">
+							<p id="out"></p>
+						</td>
+						<td width="225" height="195">
+							<img id="img2" src="" align="center">
+							<P id="win"></P>
+						</td>
+					</tr>
+
+
+					<tr>
+						<td width="550" height="30" colspan="2">
+							<form>
+								<b>金额</b>
+								<input id="jinge" type="text" name="atextfield"/>
+								<input type="button" id="11" onclick="allgress(id)" value="压大">
+								<input type="button" id="10" onclick="allgress(id)" value="压小"> 	
+							</form>	
+						</td>
+					</tr>
+
+					<tr>
+						<td width="550" height="30" colspan="2" >
+							<b>余额：</b><span id="yue"></span> ￥
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的世界</title>
+	<link rel="stylesheet" type="text/css" href="css/all_style.css">
+	<style type="text/css">
+	/*body{
+		background-image: url(iamges/body_backgound/wallpaper.jpg);
+	}*/
+	#video1{
+		display: none;
+	}
+	</style>
+<script type="text/javascript" src="js/music.js"></script>
+<script type="text/javascript" src="js/blackhole.js"></script>
+</head>
+<body bgcolor="#ffffff"   onLoad="all_main()">
+
+	<div id="time_a"></div>
+
+	<video id="video1" loop>
+  		<source src="music/毛阿敏 - 相思.mp3" type="video/mp4" >
+	</video>
+
+
+	<div align="center"><img src="iamges/body_backgound/top1.png"></div>
+
+		<div class="daohan">
+			<ul>
+				<li>
+					<a href="#">首页</a>
+				</li>
+
+				<li>
+					<a href="#">学习中心</a>
+					<ul>
+					   	<li> <a href="#">HTML视频</a> </li>
+						<li> <a href="#">CSS视频</a> </li>
+						<li> <a href="#">javaScript视频</a> </li>
+						<li> <a href="#">PHP视频</a> </li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="#">音乐/游戏</a>
+					<ul>
+						<li> <a href="#"><p onclick="playVid()" >播放音乐 </p></a></li>
+						<li> <a href="#"><p onclick="pauseVid()">暂停音乐</p></a></li>
+						<li> <a href="dudaxiao.html">压大小游戏</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="#">BBS</a>
+					<ul>
+						<li> <a href="#">黑客联盟</a> </li>
+						<li> <a href="#">编程论坛</a> </li>
+						<li> <a href="#">华夏联盟</a> </li>
+					</ul>
+				</li>
+				
+				<li>
+					<a href="#">关于我们</a>
+					<ul>
+						<li> <a href="yonghuzhuche.html" target="zhuche_a" >用户注册</a></li>
+						<li> <a href="#">在线客服</a> </li>
+						<li> <a href="#" >简介</a> </li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+
+	<div id="t_div">
+		<img id="img_black" src="iamges/blackhole.png" name="u" border="0" width="2" height="2" alt="很好玩">
+	</div >
+	<div id="neiye" >
+		<iframe src="" width="400" height="400" frameborder="0" name="zhuche_a" ></iframe>
+	</div>
+
+
+</body>
+
+</html>

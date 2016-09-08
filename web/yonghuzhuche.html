@@ -1,0 +1,121 @@
+<!DOCTYPE html >
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>用户注册</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style type="text/css">
+	body{
+		background-color: #435;
+	}
+</style>
+<script type="text/javascript">
+		function FANGT () {
+				var minzi = document.getElementById('name').value;
+				var mima = document.getElementById('mima').value;
+				var mima_2=document.getElementById('mima_2').value;
+
+				if (minzi == "" || minzi == null ) {
+					alert("请填写用户名");
+					return false;
+				}
+				else if (mima == "" || mima == null ) {
+					alert("请填写密码");
+					return false;
+				}
+				else if (mima !== mima_2) {
+					alert("两次密码不一致");
+					return false;
+				};
+			}
+
+		function myFunction(x){
+				x.style.background="yellow";
+			}
+
+
+	</script>
+</script>
+</head>
+		<!-- 15-PHP-杨博 -->		<!-- 15-PHP-杨博 -->		  <!-- 15-PHP-杨博 -->
+<body  bgcolor="#ffffff" onLoad="fade()">
+	
+
+		<form action="doreg.html" method="post">
+
+			<table class="rigister" border="1" align="center" width="300" haight="600" />
+				<tr>
+					<th colspan="8">用户注册</th>
+				</tr>
+
+				<tr>
+					<th colspan="4" align="center">姓名</th>
+					<td colspan="8"><input type="text" name="atextfield" id="name" onfocus="myFunction(this)"/></td>
+				</tr>
+
+				<tr>
+					<th colspan="4" align="center" onfocus="myFunction(this)">密码</th>
+					<td colspan="8"><input type="password" name="thepass" id="mima" /></td>
+				</tr>
+
+				<tr>
+					<th colspan="4" align="center" />
+						<abbr title="确认密码" onfocus="myFunction(this)">确认</abbr>
+					</th>
+					<td colspan="8"><input type="password" name="thepass"  id="mima_2"/></td>
+				</tr>
+
+				<tr>
+					<th colspan="4" align="center">性别</th>
+					<td colspan="8">
+					<input type="radio" name="sex" value="male"/><i>男</i>
+					<input type="radio" name="sex" value="female" checked="checked" /><i>女</i>
+					</td>
+				</tr>
+
+				<tr>
+					<th colspan="4" align="center" />
+						<abbr title="所在省份">
+							所在
+						</abbr>
+					</th>
+					<td>
+						<select name="cars">
+							<option value="广东">广东</option>
+							<option value="广西" selected>广西</option>
+							<option value="新疆">新疆</option>
+							<option value="汕头">汕头</option>
+							<option value="北京">北京</option>
+							<option value="汕尾">汕尾</option>
+					</td>
+			    </tr>
+
+			    <tr>
+			    	<th colspan="4" align="center">
+			    		<abbr title="兴趣爱好">兴趣</abbr>
+			    	</th>
+			    	<td>
+			    		<input type="checkbox" name="cd" value="Car"/>睡觉
+			    		<input type="checkbox" name="cd" value="Car"/>看书
+			    		<input type="checkbox" name="cd" value="Car"/>运动
+			    		<input type="checkbox" name="cd" value="Car"/>学习
+			    		<input type="checkbox" name="cd" value="Car"/>玩游戏
+			    	</td>
+			    </tr>
+
+			    <tr>
+			    	<th colspan="4" rowspan="1" >个人简介</th>
+			    	<td><textarea class="CV" cols="30" rows="5" onfocus="myFunction(this)"></textarea></td>
+			    </tr>
+			    <tr>
+			    	<td colspan="8" align="center">
+			    		<input type="submit" value="提交" onclick="return FANGT()"/>
+			    		<input type="reset" value="重置"/>
+			    	</td>
+			    </tr>
+			</table>
+		</form>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+body{
+	background-color:#000;
+}
+
+
+
+.daohan ul{
+	width:900px;/*边框的宽度*/
+	border: 1px solid #a24 ;/*边框像素为1*/
+	margin:0px auto 100px auto;/*外边距*/
+	list-style-type : none;/*去掉标签前面的小圆点*/
+}
+
+.daohan ul li {
+	float: left;/*想做浮动*/
+}
+
+.daohan ul li a{
+	width: 150px;/*边框宽度*/
+	height: 28px;/*边框高度*/
+	line-height: 28px; /*文字向下移动28px*/
+	background: purple;/*背景颜色*/
+	color: #FFF;/*文字颜色*/
+	margin: 5px 10px;/*外边距*/
+	font-size: 12px;/*字体大学*/
+	display:block;
+	text-decoration: none;/*去掉文字的下划线*/
+	text-align: center;/*内容居中*/
+}
+
+.daohan ul li ul {
+	display: none;/*隐藏列表*/
+	padding: 0;/*内边距*/
+	position: absolute;
+	width: 0px;/*边框宽度*/
+	border: 0px;/*边框宽度*/
+}
+
+.daohan ul li:hover ul{  
+	display: block;/*显示列表*/
+} /*但鼠标触碰时的效果*/
+
+.daohan ul a:hover{
+
+	background-color: #000;/*背景颜色*/
+	color: red;/*文字颜色*/
+}/*但鼠标触碰时的效果*/
+
+#time_a{
+	background-color: #445;
+	position: absolute;
+}
+
+#t_div{
+	left: 100px;
+	top: 150px;
+	position: relative;
+	display: block;
+}
+#img_black{
+	position: absolute;
+}
+#neiye{
+	position: relative;
+	display: block;
+	left: 450px;
+	top: 200px;
+
+
+}
